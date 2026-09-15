@@ -1,0 +1,12 @@
+{
+  "1": { "id": 1, "titolo": "Intro",   "audio": "audio/1.mp3", "video": "video/1.mp4", "testoId": 1, "glossarioId": null },
+  "2": { "id": 2, "titolo": "Perché",  "audio": "audio/2.mp3", "video": "video/2.mp4", "testoId": 2, "glossarioId": 2 },
+  "3": { "id": 3, "titolo": "Memoria", "audio": "audio/3.mp3", "video": "video/3.mp4", "testoId": 3, "glossarioId": 3 },
+  "4": { "id": 4, "titolo": "Abito",   "audio": "audio/4.mp3", "video": "video/4.mp4", "testoId": 4, "glossarioId": 4 },
+  "5": { "id": 5, "titolo": "Invito",  "audio": "audio/5.mp3", "video": "video/5.mp4", "testoId": 5, "glossarioId": 5 },
+  "6": { "id": 6, "titolo": "Azione",  "audio": "audio/6.mp3", "video": "video/6.mp4", "testoId": 6, "glossarioId": 6 },
+  "7": { "id": 7, "titolo": "Uguale",  "audio": "audio/7.mp3", "video": "video/7.mp4", "testoId": 7, "glossarioId": 7 },
+  "8": { "id": 8, "titolo": "Sofia",   "audio": "audio/8.mp3", "video": "video/8.mp4", "testoId": 8, "glossarioId": 8 },
+  "9": { "id": 9, "titolo": "Vero",    "audio": "audio/9.mp3", "video": "video/9.mp4", "testoId": 9, "glossarioId": 9 },
+  "10": { "id": 10, "titolo": "Radici", "audio": "audio/10.mp3", "video": "video/10.mp4", "testoId": 10, "glossarioId": null }
+}

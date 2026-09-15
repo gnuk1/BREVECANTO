@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BREVECANTO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="home" class="screen">
+  <h1>BREVECANTO</h1>
+
+  <button onclick="mostraSchermata('brani')">Brani musicali</button>
+  <button onclick="mostraSchermata('testi')">Testi e glossari</button>
+  <button onclick="mostraSchermata('contesto')">Contesto dell'opera</button>
+
+  <br><br>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#d4a94f" class="size-4">
+  <path d="M8 1a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 1ZM10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM12.95 4.11a.75.75 0 1 0-1.06-1.06l-1.062 1.06a.75.75 0 0 0 1.061 1.062l1.06-1.061ZM15 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 15 8ZM11.89 12.95a.75.75 0 0 0 1.06-1.06l-1.06-1.062a.75.75 0 0 0-1.062 1.061l1.061 1.06ZM8 12a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 12ZM5.172 11.89a.75.75 0 0 0-1.061-1.062L3.05 11.89a.75.75 0 1 0 1.06 1.06l1.06-1.06ZM4 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 4 8ZM4.11 5.172A.75.75 0 0 0 5.173 4.11L4.11 3.05a.75.75 0 1 0-1.06 1.06l1.06 1.06Z" />
+</svg>
+
+</div>
+
+
+<div id="brani" class="screen" style="display:none;">
+  <h2>Brani musicali</h2>
+  <div id="listaBrani"></div>
+  <button onclick="mostraSchermata('home')">Torna alla home</button>
+</div>
+
+<div id="audio" class="screen" style="display:none;">
+  <h2 id="titoloAudio"></h2>
+
+  <button onclick="indietroAudio()">◀◀</button>
+  <button onclick="pausaAudio()">❚❚</button>
+  <button onclick="playAudio(currentAudio)">▶</button>
+  <button onclick="stopAudio()">■</button>
+  <button onclick="avantiAudio()">▶▶</button>
+
+  <br><br>
+
+  <audio id="audioPlayer" controls></audio>
+
+  <br><br>
+
+  <button onclick="apriVideo(currentBranoId)">Guarda video</button>
+
+  <br><br>
+
+  <button onclick="tornaAiBrani()">Torna ai brani</button>
+</div>
+
+<div id="video" class="screen" style="display:none;">
+  <h2 id="titoloVideo"></h2>
+
+  <video id="videoPlayer" width="300" controls></video>
+
+  <br><br>
+
+  <button onclick="apriAudio(currentBranoId)">Ascolta audio</button>
+
+  <br><br>
+
+  <button onclick="tornaAiBrani()">Torna ai brani</button>
+</div>
+
+<div id="testi" class="screen" style="display:none;">
+  <h2>Testi e glossari</h2>
+  <div id="listaTesti"></div>
+  <button onclick="mostraSchermata('home')">Torna alla home</button>
+</div>
+
+<div id="testoBrano" class="screen" style="display:none;">
+  <h2 id="titoloTesto"></h2>
+
+  <div id="contenutoTesto"></div>
+
+  <div id="fumetto" class="fumetto" style="display:none;"></div>
+
+  <br><br>
+
+  <button onclick="apriGlossario(currentBranoId)">Glossario completo</button>
+  <button onclick="tornaAlBrano()">Torna al brano</button>
+
+  <br><br>
+
+  <button onclick="tornaAiTesti()">Torna ai testi</button>
+</div>
+
+<div id="glossario" class="screen" style="display:none;">
+  <h2>Glossario</h2>
+  <div id="listaGlossario"></div>
+  <button onclick="mostraSchermata('testoBrano')">Torna al testo</button>
+</div>
+
+<div id="contesto" class="screen" style="display:none;">
+  <h2>Contesto dell'opera</h2>
+  <div id="contenutoContesto"></div>
+  <br>
+  <button onclick="mostraSchermata('home')">Torna alla home</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
